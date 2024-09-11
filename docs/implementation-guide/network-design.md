@@ -45,7 +45,13 @@ This model uses a bonded Layer 2 network for the External, UI and API Management
 
 ### Diagram
 
-![Layer 2 Bonded + Dedicated Core](/assets/layer2bonded-dc.png)
+<details>
+   <summary>Layer 2 Bonded External Network with Dedicated Core Fabric</summary>
+  
+   ![Layer 2 Bonded + Dedicated Core](https://github.com/verge-io/docs/blob/main/docs/assets/layer2bonded-dc.png))
+   
+</details>
+
 
 ## Layer 3 Dynamic + Dedicated Core Fabric
 
