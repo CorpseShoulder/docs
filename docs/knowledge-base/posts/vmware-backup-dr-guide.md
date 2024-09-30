@@ -55,7 +55,9 @@ The VMware service establishes a direct agent connection with vSphere; network a
     -   ***Last State*** - Service  will only be powered on if it was on at the time of power loss.
     -   ***Leave Off*** - Service will not be powered on when power is restored (regardless of its state at the time of power loss).
     -   ***Power On*** - Service will be powered on when power is restored (regardless of its state at the time of power loss).
-1.  Select a **Network** on which to run the VMware service.  
+1.  Select a **Network** on which to run the VMware service.
+  - Generally, the simplest method is to create a new Internal network with a DHCP service available on it. Outbound traffic should be allowed via the External network. Assuming the External VergeOS network can access the VMWare WebUI interface. Routing external to VergeOS may be required to route traffic from External to the network where the VMWare is available for management.
+  - If using a Layer 2 network from outside VergeOS, that network will need a DHCP service; uncommon in many cases for VMWare management networks.
 
 !!! note "DHCP is required on the selected network."
 
